@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;1,900&family=Libre+Baskerville:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: #e5e5e5;
+  height: 100vh;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.card-body {
+  border-radius: 34px;
+  background: linear-gradient(225deg, #cacaca, #f0f0f0);
+  box-shadow: -12px 12px 24px #5a5a5a, 12px -12px 24px #ffffff;
+}
+.heading {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Libre Baskerville", serif;
+}
+.heading img {
+  width: 60px;
+  padding-right: 10px;
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Pacifico", cursive;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #4f4b4b;
+}
+.submitbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  font-family: "Pacifico", cursive;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #e8e8e8;
+}
+
+button:hover::before {
+  width: 100%;
+}
+.subheadding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Pacifico", cursive;
+}
+.weatherdisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.subheadding img {
+  width: 40px;
+}
+.row {
+  padding: 45px;
+}
+.row .temp .feels .weather {
+  font-family: "Roboto", sans-serif;
+}
+.temp img {
+  width: 25px;
+}
+.feels img {
+  width: 25px;
+}
+.weather img {
+  width: 25px;
+}
+h3 {
+  padding: 2px 2px 2px 34px;
+}
