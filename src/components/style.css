@@ -103,14 +103,16 @@ button:hover::before {
 }
 .weatherdisplay {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .subheadding img {
   width: 40px;
 }
 .row {
-  padding: 45px;
+  flex-basis: 100%;
+  margin-bottom: 10%;
+  text-align: center;
 }
 .row .temp .feels .weather {
   font-family: "Roboto", sans-serif;
@@ -126,4 +128,65 @@ button:hover::before {
 }
 h3 {
   padding: 2px 2px 2px 34px;
+}
+.tempdisp,
+.feelsdisp,
+.weatherdisp {
+  flex-basis: 50%;
+  font-size: 3vw;
+}
+.temp,
+.feels,
+.weather {
+  flex-basis: 50%;
+  font-size: 2vw;
+}
+@media only screen and (max-width: 768px) {
+  .location {
+    max-width: 100%;
+    font-size: 5vw;
+  }
+
+  button {
+    padding: 6% 10%;
+    font-size: 3vw;
+  }
+
+  .temp,
+  .feels,
+  .weather {
+    font-size: 3vw;
+  }
+
+  .tempdisp,
+  .feelsdisp,
+  .weatherdisp {
+    font-size: 4vw;
+  }
+}
+
+/* Use flexbox for layout */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submitbtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Optimize images */
+img {
+  max-width: 100%;
+  height: auto;
 }
