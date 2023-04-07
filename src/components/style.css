@@ -129,18 +129,7 @@ button:hover::before {
 h3 {
   padding: 2px 2px 2px 34px;
 }
-.tempdisp,
-.feelsdisp,
-.weatherdisp {
-  flex-basis: 50%;
-  font-size: 3vw;
-}
-.temp,
-.feels,
-.weather {
-  flex-basis: 50%;
-  font-size: 2vw;
-}
+
 @media only screen and (max-width: 768px) {
   .location {
     max-width: 100%;
